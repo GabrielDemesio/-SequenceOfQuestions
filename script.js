@@ -10,7 +10,7 @@ document.getElementById("resetButton").addEventListener("click", function(){
 
     // let recommendation = "";
 
-   // Mapeamento das combinações de entrada para as recomendações
+// Mapeamento das combinações de entrada para as recomendações
 const recommendations = {
     "AMD_1000_pequena": "Ryzen 3 4100",
     "Intel_1000_pequena": "i3 12100f",
@@ -23,8 +23,5 @@ const recommendations = {
   // Verifica se a combinação existe no mapeamento, caso contrário, retorna a mensagem padrão
   const key = `${brand}_${value}_${size}`;
   const recommendation = recommendations[key] || "Desculpe, não temos uma recomendação com base nas suas respostas.";
-  
-
-
-    document.getElementById("result").innerHTML = `<p>Recomendação: ${recommendation}</p>`;
+  document.getElementById("result").innerHTML = `<p>Recomendação: ${recommendation}</p>`;
 });
