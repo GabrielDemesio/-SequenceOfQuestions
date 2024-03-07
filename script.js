@@ -11,7 +11,7 @@ document.getElementById("resetButton").addEventListener("click", function(){
     // let recommendation = "";
 
    // Mapeamento das combinações de entrada para as recomendações
-const recomendacoes = {
+const recommendations = {
     "AMD_1000_pequena": "Ryzen 3 4100",
     "Intel_1000_pequena": "i3 12100f",
     "Intel_2000_media": "Intel® Core™ i5-12600K",
@@ -22,7 +22,7 @@ const recomendacoes = {
   
   // Verifica se a combinação existe no mapeamento, caso contrário, retorna a mensagem padrão
   const key = `${brand}_${value}_${size}`;
-  const recommendation = recomendacoes[key] || "Desculpe, não temos uma recomendação com base nas suas respostas.";
+  const recommendation = recommendations[key] || "Desculpe, não temos uma recomendação com base nas suas respostas.";
   
 
 
