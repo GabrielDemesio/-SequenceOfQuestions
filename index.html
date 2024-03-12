@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./template/GLogo.jpg">
     <title>Recomendação de Peças</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Recomendação de Processador</h1>
+    <div class="container"> 
+        <div class="header">
+            <h1>Recomendação de Processador</h1>
+        </div>
         <form id="quizForm">
             <div class="question">
                 <label>Qual marca de processador você prefere?</label><br>
@@ -16,22 +21,23 @@
                 <input type="radio" name="brand" value="Intel"> Intel<br>
             </div>
             <div class="question">
-                <label>Qual faixa de preço você está considerando?</label>       <br>
-                <input type="radio" name="price" value="1000"> Até       R$ 1000 <br>
+                <label>Qual faixa de preço você está considerando?</label><br>
+                <input type="radio" name="price" value="1000"> Até R$ 1000 <br>
                 <input type="radio" name="price" value="2000"> R$ 1100 - R$ 2000 <br>
-                <input type="radio" name="price" value="3000"> Acima de  R$ 2000 <br>
+                <input type="radio" name="price" value="3000"> Acima de R$ 2000 <br>
             </div>
             <div class="question">
                 <label>Quantos Threads e Núcleos Você Prefere?</label><br>
-                <input type="radio" name="size" value="small">  4/8  <br>
-                <input type="radio" name="size" value="medium"  >  6/12 <br>
-                <input type="radio" name="size" value="big" >  8/16 <br>
+                <input type="radio" name="size" value="small"> 4/8 <br>
+                <input type="radio" name="size" value="medium"> 6/12 <br>
+                <input type="radio" name="size" value="big"> 8/16 <br>
             </div>
             <button type="submit">Ver Recomendação</button>
-            <button type="click" id="resetButton">Voltar</button>
+            <button type="button" id="resetButton">Limpar</button>
         </form>
         <div id="result"></div>
     </div>
     <script src="script.js"></script>
 </body>
+    <footer class="footer">&copy; 2024 - Gabriel Demesio </footer>
 </html>
