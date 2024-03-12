@@ -1,21 +1,37 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    background: linear-gradient(90deg, rgb(0, 0, 0), grey);
+    color: black;
 }
 
 .container {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 15px;
     max-width: 600px;
-    margin: 0 auto;
-    background-color: #fff;
+    margin: 20px auto;
+    background: linear-gradient(135deg, #fff, grey);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
 h1 {
-    color: #333;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    color: black;
     text-align: center;
 }
 
@@ -23,25 +39,45 @@ h1 {
     margin-bottom: 15px;
 }
 
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
 button {
     display: block;
     margin: 20px auto 0;
     padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
+    background-color: #3498db;
+    color: black;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background: linear-gradient(45deg, #2980b9, rgb(4, 201, 255));
 }
 
 #result {
     margin-top: 20px;
     padding: 10px;
-    background-color: #f7f7f7;
+    background: linear-gradient(50deg, #fff, grey);
     border: 1px solid #ccc;
     border-radius: 5px;
+    color: black;
+    font-size: 15px;
+}
+
+.footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    background: linear-gradient(90deg, rgb(0, 0, 0), grey);
+    padding: 10px 0;
 }
